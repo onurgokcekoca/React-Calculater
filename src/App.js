@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Result from "./components/result/Result";
+import Button from "./components/buttons/Button";
+import { useState } from "react";
 
 function App() {
+  const [problem, setProblem] = useState("");
+  const [result, setResult] = useState("");
+  console.log(problem);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="calculator">
+        <Result problem={problem} result={result} />
+        <Button
+          setResult={setResult}
+          problem={problem}
+          setProblem={setProblem}
+          result={result}
+        />
+      </div>
     </div>
   );
 }

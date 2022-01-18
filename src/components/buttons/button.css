@@ -1,0 +1,37 @@
+.buttons {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.buttons .clear {
+  height: 50px;
+  width: calc(92% + 12px);
+  background-color: red;
+  color: #fff;
+}
+
+.buttons button {
+  width: 23%;
+  height: 80px;
+  border: none;
+  font-size: 30px;
+  margin: 2px;
+}
+
+.buttons button:active {
+  background-color: #f5af19;
+}
+
+.buttons .equalButton {
+  background-color: aqua;
+  margin-bottom: 8px;
+}
+/*# sourceMappingURL=button.css.map */

@@ -1,0 +1,27 @@
+.buttons {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .clear {
+    height: 50px;
+    width: calc(92% + 12px);
+    background-color: red;
+    color: #fff;
+  }
+  button {
+    width: 23%;
+    height: 80px;
+    border: none;
+    font-size: 30px;
+    margin: 2px;
+    &:active {
+      background-color: #f5af19;
+    }
+  }
+  .equalButton {
+    background-color: aqua;
+    margin-bottom: 8px;
+  }
+}

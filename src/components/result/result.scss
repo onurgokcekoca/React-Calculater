@@ -1,0 +1,13 @@
+.result {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  font-size: 20px;
+  letter-spacing: 1px;
+  height: 8vh;
+  width: calc(92% + 12px);
+  margin: 8px auto;
+  background-color: aliceblue;
+  overflow-x: auto;
+  border-radius: 4px;
+}
